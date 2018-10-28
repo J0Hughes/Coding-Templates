@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* You might also want to remove, or tweak, margins and padding on some other elements? */
+
+    /* Some useful bits of typography - add more to this starting point */
+    font-size: 100%;
+    line-height: 1.35;
+    font-family: sans-serif;
+}
+
+/* 
+
+Here is the minimum code for a 'responsive column of content'. 
+You may want to change the max-width according to the needs of your typeface. 
+The class names are written in a style called 'BEM' - if you are really interested
+in CSS you can read more about that here: https://cssguidelin.es/#bem-like-naming
+
+*/
+
+.text-content {
+    background: lightblue;
+}
+
+.text-content__container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    /* top and bottom, then left and right */
+}
+
+/* we use pretty much the same code again for the footer: 
+just some of the values are changed. */
+
+.site-footer {
+    background: darkolivegreen;
+    color: white;
+}
+
+/* styling just the footer links */
+
+.site-footer a {
+    color: white;
+}
+
+/* changing the separator dot colours */
+
+.site-footer b {
+    font-weight: normal;
+    color: yellow;
+}
+
+.site-footer__container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 10px 50px 10px;
+    /* top, right, bottom left */
+}
+
+/* style portfolio links that aren't found */
+
+a.not-found {
+    color: red;
+}
